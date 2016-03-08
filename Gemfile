@@ -18,6 +18,8 @@ gem 'bootstrap_form'
 gem 'fancybox2-rails', '~> 0.2.8'
 gem "lazyload-rails"
 gem 'jquery-turbolinks'
+gem 'rails_12factor', group: :production
+gem 'pg', group: :production
 
 group :development, :test do
   gem 'byebug'
@@ -27,10 +29,5 @@ group :development do
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-end
-
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
 end
 
