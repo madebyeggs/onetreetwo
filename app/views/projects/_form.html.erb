@@ -1,0 +1,12 @@
+<div class="deviseStyling col-md-11 abouts">
+	<h2 class="titles">Add your project here!</h2>
+	<%= bootstrap_form_for(@project) do |f| %>
+	  	<%= f.text_field :title, label: "Project title" %>
+		<%= f.text_field :brand, label: "Brand" %>
+		<%= f.text_field :agency, label: "Agency" %>
+		<%= f.text_field :type_of_work, label: "Type of work" %>
+	    <%= f.text_field :url, label: "Vimeo URL (just the unique identifier)" %>
+	  	<%= f.submit 'Submit', class: "btn btn-success"  %>
+	<% end %>
+</div>
+

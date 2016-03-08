@@ -12,6 +12,12 @@ gem "figaro"
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+gem 'nprogress-rails'
+gem 'devise'
+gem 'bootstrap_form'
+gem 'fancybox2-rails', '~> 0.2.8'
+gem "lazyload-rails"
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'byebug'

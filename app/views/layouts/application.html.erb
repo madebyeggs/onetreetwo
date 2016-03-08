@@ -12,12 +12,23 @@
  		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   		<%= csrf_meta_tags %>
 
-		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700,600|Fredoka+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700,600|Fredoka+One|Slabo+27px' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-
-		<%= yield %>
+		
+		<% if controller_name == "admins" %>
+			<%= yield %>
+		<% else %>
+		
+			<div class="col-md-4 fixed">
+				<%= render 'layouts/header' %>
+			</div>
+			<div class="col-md-8">
+				<%= yield %>
+			</div>
+		
+		<% end %>
 
 	</body>
 </html>
