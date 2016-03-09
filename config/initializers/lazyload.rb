@@ -1,3 +1,3 @@
 Lazyload::Rails.configure do |config|
-  config.placeholder = "../assets/black.png"
+  config.placeholder = "/public/img/black.png"
 end
