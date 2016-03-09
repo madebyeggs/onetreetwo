@@ -20,7 +20,7 @@ gem 'fancybox2-rails', '~> 0.2.8'
 gem "lazyload-rails"
 gem 'jquery-turbolinks'
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 gem 'ranked-model'
 
 group :development, :test do
