@@ -2,10 +2,12 @@
 	<h2 class="titles">Add your project here!</h2>
 	<%= bootstrap_form_for(@project) do |f| %>
 	  	<%= f.text_field :title, label: "Project title" %>
-		<%= f.text_field :brand, label: "Brand" %>
-		<%= f.text_field :agency, label: "Agency" %>
-		<%= f.text_field :type_of_work, label: "Type of work" %>
+		<%= f.text_field :brand, label: "Brand name" %>
+		<%= f.text_field :agency, label: "Agency name" %>
+		<%= f.text_field :type_of_work, label: "Type of work (e.g. Music supervision & licensing)" %>
 	    <%= f.text_field :url, label: "Vimeo URL (just the unique identifier)" %>
+		<%= f.text_field :music, label: 'Music used ("Track Name" by Artist Name)' %>
+		<%= f.file_field :image, label: "Main image (crop to 720px X 405px before upload)" %>
 	  	<%= f.submit 'Submit', class: "btn btn-success"  %>
 	<% end %>
 </div>

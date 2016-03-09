@@ -5,6 +5,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -18,6 +19,9 @@ gem 'bootstrap_form'
 gem 'fancybox2-rails', '~> 0.2.8'
 gem "lazyload-rails"
 gem 'jquery-turbolinks'
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'ranked-model'
 
 group :development, :test do
   gem 'byebug'

@@ -13,11 +13,14 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require jquery-ui/sortable
+//= require jquery-ui/effect-highlight
+//= require turbolinks
 //= require nprogress
 //= require nprogress-turbolinks
 //= require fancybox
 //= require lazyload
-//= require turbolinks
+//= require update_projects_row_order
 
 $(document).ready(function(){
 	
