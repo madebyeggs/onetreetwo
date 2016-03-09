@@ -9,24 +9,26 @@
   		<thead>
     		<tr>
       			<th width="10%">Brand</th>
-      			<th width="21%">Title</th>
+      			<th width="19%">Title</th>
 				<th width="13%">Agency</th>
       			<th width="16%">Type of work</th>
-				<th width="15%">Music</th>
+				<th width="13%">Music</th>
 				<th width="6%">Vimeo ID</th>
 				<th width="4%">Image?</th>
+				<th width="4%"></th>
     		</tr>
   		</thead>
   		<tbody>
     		<% @projects.each do |project| %>
       			<tr data-item-id=<%= "#{project.id}" %> class="item">
         			<td width="10%"><%= project.brand %></td>
-					<td width="21%"><%= project.title %></td>
+					<td width="19%"><%= project.title %></td>
 					<td width="13%"><%= project.agency %></td>
 					<td width="16%"><%= project.type_of_work %></td>
-					<td width="15%"><%= project.music %></td>
+					<td width="13%"><%= project.music %></td>
 					<td width="6%"><%= project.url %></td>
 					<td width="4%"><% if project.image? %>Yes<% else %>No<% end %></td>
+					<td width="4%"><%= link_to 'Edit', edit_project_path(project), class: "btn btn-success" %></td>
       			</tr>
     		<% end %>
   		</tbody>
