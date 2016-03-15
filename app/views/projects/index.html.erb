@@ -1,5 +1,6 @@
-<div class="deviseStyling col-md-12 projects canScroll">
+<div class="deviseStyling col-md-12 projects">
 	<h2 class="titles">Recent work</h2>
+	<div class"canScroll">
 	<% @projects.each do |project| %>
 	<a href="https://player.vimeo.com/video/<%= project.url %>?badge=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" class="video-popup">
 		<div class="col-md-6">
@@ -19,4 +20,5 @@
 		</div>
 	</a>
 	<% end %>
+	</div>
 </div>
