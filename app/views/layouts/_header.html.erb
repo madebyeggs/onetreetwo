@@ -1,6 +1,6 @@
-<div class="col-md-12 logo"><%= link_to(image_tag('logo2.2.png'), root_path, class: "logo") %></div>
+<div class="col-md-12 logoContainer"><%= link_to(image_tag('logo2.2.png'), root_path, class: "logo") %></div>
 <div class="col-md-12 navFix">
-	<ul class="navigation">
+	<ul id="menu" class="navigation">
 		<li><%= link_to 'Work', projects_path %></li>
 		<li><%= link_to 'About', abouts_path %></li>
 		<% if user_signed_in? %><li><%= link_to 'CMS', admins_path %></li><% end %>

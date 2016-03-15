@@ -21,8 +21,15 @@
 //= require fancybox
 //= require lazyload
 //= require update_projects_row_order
+//= require bootstrap
+//= require jquery.slicknav
 
 $(document).ready(function(){
+	
+	//mobileNavMenu
+	$(function(){
+		$('#menu').slicknav();
+	});
 	
 	// initiate fancybox for videos
 	$(".video-popup").fancybox({
@@ -47,10 +54,23 @@ $(document).ready(function(){
         function(){
         	$(this).find('.info-wrapper').stop().slideUp('100');
         });
-    }
+	} else {
+		$('.info-wrapper').show();
+	}
+
+	$( ".info-wrapper2:first" ).show();
+
+	$('.servicesLinks').click(function(){
+		$('.info-wrapper2').slideUp('200');
+		$(this).find('.info-wrapper2').slideDown('200');
+	});
 	
 	$(".lazy").lazyload({
 		effect : "fadeIn"
 	});
+	
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 	
 });
